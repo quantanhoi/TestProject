@@ -14,3 +14,10 @@ npm install --save-dev jest @types/jest
 ```
 1. The main class Dog should be simple enough, it have a Name and Age
 2. The other table should be Program state, which hold a single attribute of latest update time, however mikro-orm require every class to have an id, and we can always get the programstate my using findOneOrFail() function
+3. For testing I use mock to test each route, test can be run with ```npm test```
+4. To run backend only all you need is ```cd backend/``` and then ```npm start```, postgres docker will be composed and the server will run respectively
+
+### Frontend ###
+```
+npx create-react-app my-app --template typescript
+```
