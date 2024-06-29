@@ -21,3 +21,7 @@ npm install --save-dev jest @types/jest
 ```
 npx create-react-app my-app --template typescript
 ```
+
+1. There are some reuseable components here, it's Button, Inputfield, I also created DogForm with those 2 component
+2. To make DogsView automatically fetch the new data after a dog is added via DogsForm, I will let thhe App component, which is the parent component manage the state
+3. In the videos, it should have been that client add many dogs first, then they can send a list of dogs back to the backend. I overlooked this, the addDog methods only take one instance of dog at a time, so instead of making 2 button there will be only one instead (sorry kinda sleepy rn, I have labor on Monday)

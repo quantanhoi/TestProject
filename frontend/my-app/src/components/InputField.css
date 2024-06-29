@@ -1,0 +1,15 @@
+.input-field {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1vh;
+    max-width: 40%;
+}
+
+.input-field:focus {
+    border-color: #0066cc;
+    outline: none;
+}
