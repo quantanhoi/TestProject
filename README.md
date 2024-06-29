@@ -3,6 +3,11 @@
 2. I decided to go with postgresql, make it in a docker
 3. mikro-orm is a framework that I have experience with, so I will use it for mapping
 
+### Run the Project ###
+inside TestProject folder run:
+```npm start```
+this is start both backend and frontend in dev mode, on the web page it may show failed to fetch dog data, just refresh it :D
+
 
 ## Backend ##
 ```
@@ -17,7 +22,7 @@ npm install --save-dev jest @types/jest
 3. For testing I use mock to test each route, test can be run with ```npm test```
 4. To run backend only all you need is ```cd backend/``` and then ```npm start```, postgres docker will be composed and the server will run respectively
 
-### Frontend ###
+## Frontend ##
 ```
 npx create-react-app my-app --template typescript
 ```
