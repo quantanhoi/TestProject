@@ -1,6 +1,7 @@
 import { Dog } from "../models/dog";
 import defineConfig from '../mikro-orm.config'
 import { MikroORM } from "@mikro-orm/postgresql";
+import { updateProgrameState } from "./programstateMethod";
 
 
 export async function getAllDog(): Promise<Dog[]> {
@@ -26,6 +27,7 @@ export async function addDog(dog: Dog):Promise<void> {
         const em = orm.em.fork();
         em.persist(dog);
         await em.flush();
+        await updateProgrameState();
     }
     catch(err) {
         console.error('Failed to add dog to database: ', err);
