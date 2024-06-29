@@ -7,6 +7,7 @@
 inside TestProject folder run:
 ```npm start```
 this is start both backend and frontend in dev mode, on the web page it may show failed to fetch dog data, just refresh it :D
+### You may need to ```npm install``` in both backend and frontend first ###
 
 
 ## Backend ##
